@@ -41,7 +41,11 @@ function Navbar() {
             ))}
           </ul>
         </div>
-        <img src={assets.logo} alt="logo" className="w-60 h-14" />
+        <img
+          src={assets.logo}
+          alt="logo"
+          className="hidden sm:block w-50 h-auto"
+        />
       </div>
       <div className="navbar-end">
         <ul className="menu menu-horizontal hidden lg:flex px-1">
@@ -51,9 +55,12 @@ function Navbar() {
             </li>
           ))}
         </ul>
-        <a className="bg-[#007f94] text-white rounded-md p-2 me-2 cursor-pointer">
+        <Link
+          to="/contact"
+          className="bg-[#007f94] text-white rounded-md p-2 me-2 cursor-pointer"
+        >
           Contact us
-        </a>
+        </Link>
       </div>
     </div>
   );

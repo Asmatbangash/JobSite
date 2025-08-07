@@ -4,9 +4,9 @@ import { assets } from "../assets/assets";
 
 function Hero() {
   return (
-    <div className="hero min-h-screen px-30">
+    <div className="hero min-h-screen px-30 max-sm:px-0">
       <div className="hero-content flex-col lg:flex-row-reverse">
-        <img src={assets.group} className="max-w-md rounded-lg" />
+        <img src={assets.group} className="w-md rounded-lg" />
         <div>
           <Title
             text={"Download Job Site Route, Invite friends and Earn discounts!"}
