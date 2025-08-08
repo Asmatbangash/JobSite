@@ -99,15 +99,7 @@ function Home() {
       <div className="flex justify-center items-center my-10 px-4">
         <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-8 bg-[#F7F7F7] w-full max-w-xl rounded-lg py-4 px-6 shadow-sm">
           {buttonName.map((btn) => (
-            <NavLink
-              key={btn.name}
-              to={btn.href}
-              className={({ isActive }) =>
-                isActive
-                  ? "text-blue-600 font-semibold text-center"
-                  : "text-gray-700 hover:text-blue-500 text-center"
-              }
-            >
+            <NavLink key={btn.name} to={btn.href} className="">
               {btn.name}
             </NavLink>
           ))}

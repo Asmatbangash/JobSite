@@ -12,6 +12,7 @@ import group7 from "./Group7.png";
 import group8 from "./Group8.png";
 import circle from "./Circle.png";
 import Vedio from "./Vedio.png";
+import map from "./map.png";
 
 export const assets = {
   logo,
@@ -28,4 +29,5 @@ export const assets = {
   group7,
   group8,
   Vedio,
+  map,
 };

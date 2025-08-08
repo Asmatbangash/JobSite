@@ -6,3 +6,15 @@
     padding: 0px 40px;
     border-radius:50%;
 }
+
+.hero{
+    background-image: url('./assets/map.png');
+}
+
+.active{
+    color: #007f94;
+}
+.menu{
+    background-color: none !important;
+}
+

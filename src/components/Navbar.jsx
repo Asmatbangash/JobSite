@@ -1,6 +1,6 @@
 import React from "react";
 import { assets } from "../assets/assets";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 function Navbar() {
   const navigate = [
@@ -32,11 +32,11 @@ function Navbar() {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+            className=" dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
           >
             {navigate.map((item) => (
-              <li>
-                <Link to={item.href}>{item.name}</Link>
+              <li className="px-4 py-2">
+                <NavLink to={item.href}>{item.name}</NavLink>
               </li>
             ))}
           </ul>
@@ -48,10 +48,10 @@ function Navbar() {
         />
       </div>
       <div className="navbar-end">
-        <ul className="menu menu-horizontal hidden lg:flex px-1">
+        <ul className="px-4 hidden lg:flex">
           {navigate.map((item) => (
-            <li>
-              <Link to={item.href}>{item.name}</Link>
+            <li className="px-4">
+              <NavLink to={item.href}>{item.name}</NavLink>
             </li>
           ))}
         </ul>
