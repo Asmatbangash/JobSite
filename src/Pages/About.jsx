@@ -26,7 +26,7 @@ function About() {
         />
         <p className="mt-2 text-sm md:text-base">
           Download Job site route app from Play Store or App Store, create an
-          account, order food, invite friends, and earn discounts!
+          account, <br /> order food, invite friends, and earn discounts!
         </p>
       </div>
       <div className="flex justify-center items-center my-10 px-4">
@@ -35,11 +35,9 @@ function About() {
             <NavLink
               key={btn.name}
               to={btn.href}
-              className={({ isActive }) =>
-                isActive
-                  ? "text-blue-600 font-semibold text-center"
-                  : "text-gray-700 hover:text-blue-500 text-center"
-              }
+              className={(e) => {
+                return e.isActive ? "bgOnClick" : "";
+              }}
             >
               {btn.name}
             </NavLink>

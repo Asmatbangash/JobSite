@@ -35,7 +35,7 @@ function Navbar() {
             className=" dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
           >
             {navigate.map((item) => (
-              <li className="px-4 py-2">
+              <li className="px-4 py-2 text-sm font-bold">
                 <NavLink to={item.href}>{item.name}</NavLink>
               </li>
             ))}
@@ -50,7 +50,7 @@ function Navbar() {
       <div className="navbar-end">
         <ul className="px-4 hidden lg:flex">
           {navigate.map((item) => (
-            <li className="px-4">
+            <li className="px-4 text-sm font-bold">
               <NavLink to={item.href}>{item.name}</NavLink>
             </li>
           ))}

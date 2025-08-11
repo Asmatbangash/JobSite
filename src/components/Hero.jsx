@@ -8,10 +8,10 @@ function Hero() {
       <div className="hero-content flex-col lg:flex-row-reverse">
         <img src={assets.group} className="w-md rounded-lg" />
         <div>
-          <Title
-            text={"Download Job Site Route, Invite friends and Earn discounts!"}
-            className="text-5xl font-bold"
-          />
+          <h1 className="text-5xl font-bold">
+            Download <span className="text-[#0784b3]">Job Site Route</span>,
+            Invite friends and Earn discounts!
+          </h1>
           <p className="py-6">
             Download the Job Site Route app from the Google Play store or App
             store, create an account, order food, invite friends, and earn

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
 @import "tailwindcss";
 @plugin "daisyui";
 
@@ -12,9 +13,15 @@
 }
 
 .active{
-    color: #007f94;
+    color: #007F94;
 }
 .menu{
     background-color: none !important;
 }
 
+.bgOnClick{
+    background-color: #007F94;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 10px;
+}
